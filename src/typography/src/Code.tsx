@@ -4,11 +4,20 @@ import { withTheme, Theme } from '../../theme'
 import Text from './Text'
 
 interface CodeProps extends React.ComponentProps<typeof Text> {
-  /** The appearance of the code. */
+  /**
+   * The appearance of the code.
+   */
   appearance: 'default' | 'minimal'
-  /** Class name passed to the component. Only use if you know what you are doing. */
+
+  /**
+   * Class name passed to the button.
+   * Only use if you know what you are doing.
+   */
   className?: string
-  /** Theme provided by ThemeProvider. */
+
+  /**
+   * Theme provided by ThemeProvider.
+   */
   theme: Theme
 }
 

@@ -3,13 +3,26 @@ import Box, { BoxProps } from 'ui-box'
 import { withTheme, Theme } from '../../theme'
 
 interface ParagraphProps {
-  /** The color (alias or valid color) applied to the text */
+  /**
+   * The color (alias or valid color) applied to the text
+   */
   color?: string
-  /** Font family applied to the component */
+
+  /**
+   * Font family.
+   * Can be: `ui`, `display` or `mono` or a custom font family.
+   */
   fontFamily?: 'ui' | 'display' | 'mono'
-  /** Size of the text style. */
+
+  /**
+   * Size of the text style.
+   * Can be: 300, 400, 500.
+   */
   size?: 300 | 400 | 500
-  /** Theme provided by ThemeProvider. */
+
+  /**
+   * Theme provided by ThemeProvider.
+   */
   theme: Theme
 }
 

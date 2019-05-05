@@ -8,10 +8,15 @@ interface UnorderedListProps {
    */
   icon?: string
 
-  /** The color of the icon. */
+  /**
+   * The color of the icon in each list item in the list.
+   */
   iconColor?: string
 
-  /** Size of the text used in a list item. */
+  /**
+   * Size of the text used in a list item.
+   * Can be: 300, 400, 500, 600.
+   */
   size?: 300 | 400 | 500 | 600
 }
 

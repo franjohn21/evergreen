@@ -9,18 +9,31 @@ interface LinkProps extends React.ComponentProps<typeof Text> {
    * Only use if you know what you are doing.
    */
   className?: string
-  /** The color (and styling) of the Link. Can be default, blue, green or neutral. */
+
+  /**
+   * The color (and styling) of the Link. Can be default, blue, green or neutral.
+   */
   color?: string
-  /** Specifies the URL of the linked resource. A URL might be absolute or relative. */
+
+  /**
+   * Specifies the URL of the linked resource. A URL might be absolute or relative.
+   */
   href?: string
+
   /**
    * This attribute names a relationship of the linked document to the current document.
    * Common use case is: rel="noopener noreferrer".
    */
   rel?: string
-  /** Target atrribute, common use case is target="_blank." */
+
+  /**
+   * Target atrribute, common use case is target="_blank."
+   */
   target?: string
-  /** Theme provided by ThemeProvider. */
+
+  /**
+   * Theme provided by ThemeProvider.
+   */
   theme: Theme
 }
 

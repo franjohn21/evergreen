@@ -5,11 +5,19 @@ import { withTheme, Theme } from '../../theme'
 type HeadingSize = 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
 
 interface HeadingProps {
-  /** Pass `default` to use the default margin top for that size. */
+  /**
+   * Pass `default` to use the default margin top for that size.
+   */
   marginTop?: boolean | number | string | 'default'
-  /** The size of the heading. */
+
+  /**
+   * The size of the heading.
+   */
   size: HeadingSize
-  /** Theme provided by ThemeProvider. */
+
+  /**
+   * Theme provided by ThemeProvider.
+   */
   theme: Theme
 }
 

@@ -2,7 +2,10 @@ import React, { PureComponent } from 'react'
 import Box, { BoxProps } from 'ui-box'
 
 interface OrderedListProps {
-  /** Size of the text used in a list item. */
+  /**
+   * Size of the text used in a list item.
+   * Can be: 300, 400, 500, 600.
+   */
   size: 300 | 400 | 500 | 600
 }
 
