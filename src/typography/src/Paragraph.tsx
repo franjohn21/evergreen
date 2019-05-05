@@ -1,29 +1,20 @@
 import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
 import Box, { BoxProps } from 'ui-box'
-import { withTheme } from '../../theme'
+import { withTheme, Theme } from '../../theme'
 
-class Paragraph extends PureComponent<any & BoxProps> {
-  static propTypes = {
-    /**
-     * Size of the text style.
-     * Can be: 300, 400, 500.
-     */
-    size: PropTypes.oneOf([300, 400, 500]).isRequired,
+interface ParagraphProps {
+  /** The color (alias or valid color) applied to the text */
+  color?: string
+  /** Font family applied to the component */
+  fontFamily?: 'ui' | 'display' | 'mono'
+  /** Size of the text style. */
+  size?: 300 | 400 | 500
+  /** Theme provided by ThemeProvider. */
+  theme: Theme
+}
 
-    /**
-     * Font family.
-     * Can be: `ui`, `display` or `mono` or a custom font family.
-     */
-    fontFamily: PropTypes.string.isRequired,
-
-    /**
-     * Theme provided by ThemeProvider.
-     */
-    theme: PropTypes.object.isRequired
-  }
-
-  static defaultProps = {
+class Paragraph extends PureComponent<ParagraphProps & BoxProps> {
+  static defaultProps: Partial<ParagraphProps> = {
     size: 400,
     color: 'default',
     fontFamily: 'ui'
